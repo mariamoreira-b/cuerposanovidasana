@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
-/* =========================
-   RESET
-========================= */
-
 *{
     margin:0;
     padding:0;
@@ -21,19 +17,11 @@ body{
     line-height:1.7;
 }
 
-/* =========================
-   CONTENEDOR
-========================= */
-
 .container{
     width:95%;
     max-width:1400px;
     margin:auto;
 }
-
-/* =========================
-   HEADER
-========================= */
 
 header{
     background:#fff;
@@ -57,25 +45,16 @@ header{
     gap:15px;
 }
 
-.logo-container svg{
-    flex-shrink:0;
-}
-
 .logo-text h2{
     color:#2E7D32;
     font-size:1.5rem;
     font-weight:800;
-    line-height:1.2;
 }
 
 .logo-text p{
     color:#666;
     font-size:.85rem;
 }
-
-/* =========================
-   MENU
-========================= */
 
 nav ul{
     display:flex;
@@ -99,28 +78,18 @@ nav ul li a:hover{
     color:white;
 }
 
-/* =========================
-   HERO
-========================= */
-
 .hero{
     height:90vh;
-
     background:
-    linear-gradient(
-        rgba(0,0,0,.55),
-        rgba(0,0,0,.55)
-    ),
+    linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)),
     url("https://images.unsplash.com/photo-1490645935967-10de6ba17061?q=80&w=1800");
 
     background-size:cover;
     background-position:center;
-
     display:flex;
     justify-content:center;
     align-items:center;
     text-align:center;
-
     color:white;
 }
 
@@ -140,24 +109,14 @@ nav ul li a:hover{
     margin-bottom:30px;
 }
 
-/* =========================
-   BOTONES
-========================= */
-
 .btn{
     display:inline-block;
-
     background:#4CAF50;
     color:white;
-
     text-decoration:none;
-
     padding:15px 35px;
-
     border-radius:40px;
-
     font-weight:600;
-
     transition:.3s;
 }
 
@@ -166,10 +125,6 @@ nav ul li a:hover{
     transform:translateY(-3px);
 }
 
-/* =========================
-   SECCIONES
-========================= */
-
 .section{
     padding:80px 0;
 }
@@ -177,42 +132,27 @@ nav ul li a:hover{
 .section-title{
     text-align:center;
     margin-bottom:50px;
-
     color:#2E7D32;
-
     font-size:2.5rem;
     font-weight:700;
 }
 
-/* =========================
-   TARJETAS
-========================= */
-
 .cards{
     display:grid;
-    grid-template-columns:
-    repeat(auto-fit,minmax(280px,1fr));
-
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
     gap:30px;
 }
 
 .card{
     background:white;
-
     border-radius:20px;
-
     overflow:hidden;
-
-    box-shadow:
-    0 10px 25px rgba(0,0,0,.08);
-
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
     transition:.4s;
 }
 
 .card:hover{
-    transform:
-    translateY(-10px)
-    scale(1.02);
+    transform:translateY(-10px) scale(1.02);
 }
 
 .card img{
@@ -234,9 +174,10 @@ nav ul li a:hover{
     color:#555;
 }
 
-/* =========================
-   ABOUT
-========================= */
+.card-content i{
+    margin-right:8px;
+    color:#4CAF50;
+}
 
 .about{
     display:grid;
@@ -251,25 +192,16 @@ nav ul li a:hover{
     box-shadow:0 10px 25px rgba(0,0,0,.1);
 }
 
-/* =========================
-   ESTADISTICAS
-========================= */
-
 .stats{
     background:white;
 }
 
 .stat-box{
     background:white;
-
     border-radius:20px;
-
     padding:40px;
-
     text-align:center;
-
-    box-shadow:
-    0 10px 25px rgba(0,0,0,.08);
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
 }
 
 .stat-box h2{
@@ -281,29 +213,32 @@ nav ul li a:hover{
     font-weight:600;
 }
 
-/* =========================
-   FORMULARIO
-========================= */
+iframe{
+    width:100%;
+    min-height:500px;
+    border:none;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+}
+
+audio{
+    width:100%;
+    margin-top:20px;
+}
 
 .contact-form{
     max-width:700px;
     margin:auto;
-
     display:flex;
     flex-direction:column;
-
     gap:20px;
 }
 
 .contact-form input,
 .contact-form textarea{
-
     padding:15px;
-
     border:1px solid #ddd;
-
     border-radius:12px;
-
     font-family:'Poppins',sans-serif;
 }
 
@@ -318,10 +253,6 @@ nav ul li a:hover{
     cursor:pointer;
 }
 
-/* =========================
-   TESTIMONIOS
-========================= */
-
 .testimonial{
     text-align:center;
 }
@@ -329,27 +260,16 @@ nav ul li a:hover{
 .testimonial img{
     width:90px;
     height:90px;
-
     border-radius:50%;
-
     object-fit:cover;
-
     margin-bottom:15px;
 }
 
-/* =========================
-   FOOTER
-========================= */
-
 footer{
     background:#1B5E20;
-
     color:white;
-
     text-align:center;
-
     padding:60px 20px;
-
     margin-top:50px;
 }
 
@@ -361,45 +281,61 @@ footer p{
     margin:8px 0;
 }
 
-/* =========================
-   WHATSAPP
-========================= */
-
 .whatsapp{
     position:fixed;
-
     right:25px;
     bottom:25px;
-
     width:65px;
     height:65px;
-
     background:#25D366;
-
     color:white;
-
     border-radius:50%;
-
     display:flex;
     justify-content:center;
     align-items:center;
-
     font-size:30px;
-
     text-decoration:none;
-
-    box-shadow:
-    0 5px 20px rgba(0,0,0,.3);
-
+    box-shadow:0 5px 20px rgba(0,0,0,.3);
     z-index:999;
 }
 
-/* =========================
-   RESPONSIVE
-========================= */
+.video-container{
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.video-thumbnail{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    display: block;
+    border-radius: 20px;
+}
+
+.play-button{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90px;
+    height: 90px;
+    background: rgba(255, 0, 0, 0.85);
+    border-radius: 50%;
+    color: white;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+.video-container:hover .play-button{
+    transform: translate(-50%, -50%) scale(1.1);
+}
 
 @media(max-width:1100px){
-
     .navbar{
         flex-direction:column;
         gap:15px;
@@ -409,7 +345,6 @@ footer p{
         flex-wrap:wrap;
         justify-content:center;
     }
-
 }
 
 @media(max-width:768px){
@@ -432,6 +367,10 @@ footer p{
 
     .section-title{
         font-size:2rem;
+    }
+
+    iframe{
+        min-height:250px;
     }
 
 }
